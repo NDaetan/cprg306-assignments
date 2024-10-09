@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function item({name, quantity, category}) {
+export default function Item({name, quantity, category}) {
     return (
         <li>
             <div>{name}</div>
