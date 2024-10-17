@@ -39,34 +39,38 @@ const NewItem = () =>{
 
     //Other than main headin on page.js this should render the form.
     return (
-        <form onSubmit={handleSubmit}>
-            <div>
-                <label name="name">Name:</label>
+        <form className= "space-y-4" onSubmit={handleSubmit}>
+            <div className="flex items-center space-x-4">
+                <label name="name" className = "block text-lg mb-2">Name:</label>
                 <input type="text" 
                 id="name" 
                 value={name} 
                 onChange ={(e) => setName(e.target.value)} //text input doesnt work without this. I think it sets the value to "" and doesnt allow it to be changed.
-                required />
+                required
+                className = " px-4 py-2 border rounded" />
             </div>
-            <div>
+            <div className ="flex items-center justify-center space-x-4">
                 <button 
                     type="button" 
                     onClick={decrement}
-                    
-                  >  -
+                    className="px-4 py-2 bg-gray-300 rounded disabled:opacity-50"
+                >
+                      -
                 </button>
                 <span>{quantity}</span>
                 <button 
                     type="button" 
                     onClick={increment} 
+                    className="px-4 py-2 bg-gray-300 rounded disabled:opacity-50"
                 >
                     +
                 </button>
             </div>
-            <div>
-                <label name="category">Category:</label>
+            <div className = "flex items-center space-x-4">
+                <label name="category" className = "block text-lg mb-2">Category:</label>
                 <select id="category" value={category}
-                onChange={(e) => setCategory(e.target.value)}>
+                onChange={(e) => setCategory(e.target.value)}
+                className="px-4 py-2 border rounded">
                     <option value = "produce">Produce</option>
                     <option value="dairy">Dairy</option>
                     <option value="bakery">Bakery</option>
@@ -81,7 +85,8 @@ const NewItem = () =>{
                 </select>
             </div>
             <div>
-                <button type = "submit">Add Item</button>
+                <button type = "submit"
+                className = "px-4 py-2 bg-blue-500 text-white-rounded">Add Item</button>
             </div>
         </form>
     );

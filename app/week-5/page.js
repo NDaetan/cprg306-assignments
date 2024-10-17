@@ -7,13 +7,13 @@ import NewItem from './new-item'; //this should hold all functions ill need. onl
 const Page = () => {
     
     return (
-        <div className="text-center p-5 font-sans">
+        <div className="flex flex-col items-center mt-10 justify-center text-center p-5 font-sans">
             <h1 className="text-2xl font-bold mb-4">Add New Item</h1>
             <NewItem />
         </div>   
     );
 };
 
-export default Page;    //I dont know why this is needed for the page to function.
+export default Page;    //I dont understand why this is needed for the page to function.
 
 
