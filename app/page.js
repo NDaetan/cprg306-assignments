@@ -24,6 +24,9 @@ export default function Home() {
             <li>
             <Link className = "underline" href = "./week-7">Week 7 Assignment</Link>
             </li>
+            <li>
+            <Link className = "underline" href = "./week-8">Week 8 Assignment</Link>
+            </li>
         </ul>
     </main>
   );
