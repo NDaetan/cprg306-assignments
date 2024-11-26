@@ -30,6 +30,9 @@ export default function Home() {
             <li>
             <Link className = "underline" href = "./week-9">Week 9 Assignment</Link>
             </li>
+            <li>
+            <Link className = "underline" href = "./week-10">Week 10 Assignment</Link>
+            </li>
         </ul>
     </main>
   );

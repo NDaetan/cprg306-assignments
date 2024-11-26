@@ -28,7 +28,7 @@ const Page = () => {
                     >
                         Logout
                     </button>
-                    <Link href="/week-9/shopping-list" className="px-4 py-2 bg-green-500 text-white rounded">
+                    <Link href="/week-10/shopping-list" className="px-4 py-2 bg-green-500 text-white rounded">
                         Go to Shopping List
                     </Link>
                 </div>
